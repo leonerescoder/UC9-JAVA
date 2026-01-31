@@ -1,0 +1,105 @@
+Nível de Dificuldade 1: 
+
+01-    Declare duas variáveis inteiras, atribua valores e imprima a soma.
+
+02-    Declare uma variável double para temperatura em Celsius, atribua um valor e a imprima.
+
+03-    Calcule e imprima a área de um retângulo (comprimento * largura).
+
+04-    Troque os valores armazenados em duas variáveis inteiras (usando uma terceira variável temporária).
+
+05-    Dado um número de segundos, calcule e imprima o equivalente em minutos e segundos restantes.
+
+06-    Pergunte o nome do usuário e imprima "Olá, [nome]!".
+
+07-    Pergunte ao usuário por dois números inteiros e imprima o produto.
+
+08-    Peça uma temperatura em Fahrenheit, converta para Celsius e imprima.
+
+09-    Peça um preço e uma quantidade, depois calcule e imprima o custo total.
+
+10-    Use printf para imprimir um double com exatamente duas casas decimais.
+
+11-    Escreva um método void imprimirLinha() que imprima 20 hifens. Chame-o.
+
+12-    Escreva um método imprimirQuadrado(int n) que imprima "O quadrado de n é n²".
+
+13-    Escreva um método imprimirSoma(int a, int b) que imprima a soma.
+
+14-    Escreva um método imprimirCaixa() que use imprimirLinha para formar uma caixa.
+
+15-    Escreva um método imprimirSaudacaoPersonalizada(String nome).
+
+Nível de Dificuldade 2: 
+
+16-    Calculadora de Gorjeta: Peça o total da conta e a porcentagem da gorjeta, calcule e imprima a gorjeta e o total final.
+
+17-    Extrator de Dígitos: Peça um número de 3 dígitos. Extraia e imprima cada dígito.
+
+18-    Calculadora de Média: Peça três números e imprima a média.
+
+19-    Conversor de Segundos: Peça segundos totais e converta para horas, minutos e segundos.
+
+20-    Conversor de Moeda: Peça valor em USD e taxa de câmbio, converta e imprima.
+
+21-    Auxiliar de Geometria: Calcule a circunferência e a área de um círculo dado o raio.
+
+22-    Classificador de Idade: Pergunte a idade e imprima "Criança", "Adolescente" ou "Adulto".
+
+23-    Verificador de Paridade: Peça um inteiro e imprima "Par" ou "Ímpar".
+
+24-    Repetidor de String: Peça uma palavra e um número. Imprima a palavra repetida.
+
+25-    Conversor de Unidades: Converta polegadas para centímetros.
+
+26-    Método imprimirCabecalhoNota(String nomeLoja) que imprima um cabeçalho centralizado.
+
+27-    Método imprimirMaximo(int a, int b) que imprima o maior.
+
+28-    Método descreverDivisao(int a, int b) que imprima "a / b = q, resto r".
+
+29-    Método imprimirTempoFormatado(int h, int m, int s) que imprima HH:MM:SS.
+
+30-    Método imprimirLinhaTracejada(int comprimento).
+
+Nível de Dificuldade 3:
+
+31-    Calculadora de IMC: Peça peso (kg) e altura (cm), calcule o IMC e categorize.
+
+32-    Folha de Pagamento Simples: Calcule salário com horas extras (1.5x após 40h).
+
+33-    Calculadora de Valor Futuro: VF = P * (1 + r)^t. Use Math.pow.
+
+34-    Inversor de Número (3 dígitos): Inverta os dígitos de um número usando apenas aritmética.
+
+35-    Verificador de Ano Bissexto: Determine se um ano é bissexto.
+
+36-    Calculadora de Notas: Média de 3 provas com atribuição de conceito (A, B, C...).
+
+37-    Cardápio de Cafeteria: Menu interativo que calcula o total do pedido.
+
+38-    Estimador de Tempo de Viagem: Calcule tempo de viagem a partir de distância e velocidade.
+
+39-    Contador Básico: Simule um contador com métodos incrementar, decrementar e reiniciar.
+
+40-    Impressor de Padrões: Métodos para imprimir um triângulo e um retângulo vazado de estrelas.
+
+41-    Gerador de "Mad Libs": Crie uma história engraçada com palavras fornecidas pelo usuário.
+
+42-    Conversor de Unidades Aprimorado: Converta milhas para quilômetros e metros com métodos específicos.
+
+43-    Simulador de Checkout: Aplique um desconto no item mais caro de três e imprima um resumo formatado.
+
+44-    Prática de Depuração: Corrija um programa fornecido com um erro de lógica.
+
+45-    Menu Simples de "Caixa Eletrônico": Simule operações de depósito, saque e consulta de saldo.
+
+46-    Formatador de Data: Receba dia, mês, ano e imprima no formato DD/MM/AAAA com dois dígitos.
+
+47-    Tabela de Juros Compostos: Imprima uma tabela do crescimento do investimento por 5 anos.
+
+48-    Calculadora de Custo de Energia: Calcule o custo diário e mensal de um aparelho elétrico.
+
+49-    Decomposição de Métodos: Implemente uma nota fiscal usando métodos imprimirCabecalho, imprimirItem, imprimirTotal.
+
+50-    Desafio de Modularização: Refatore um programa monolítico em métodos obterEntrada, calcular e imprimirResultados.
