@@ -1,0 +1,63 @@
+Exercícios de Controle de Fluxo - Capítulo 5 do Think Java
+
+Exercício 1 - Par ou Ímpar
+Crie um programa que receba um número inteiro e imprima se ele é "Par" ou "Ímpar".
+
+Exercício 2 - Maior de Idade
+Peça a idade do usuário e informe se ele é "Maior de idade" (18 anos ou mais) ou "Menor de idade".
+
+Exercício 3 - Comparador Simples
+Receba dois números e informe qual é o maior, ou se são iguais.
+
+Exercício 4 - Aprovado ou Reprovado
+Receba uma nota (0 a 10) e imprima "Aprovado" se for maior ou igual a 6, caso contrário "Reprovado".
+
+Exercício 5 - Positivo, Negativo ou Zero
+Receba um número e classifique-o como "Positivo", "Negativo" ou "Zero".
+
+Exercício 6 - Dia da Semana (Switch)
+Usando switch, receba um número de 1 a 7 e imprima o dia da semana correspondente (1=Domingo, 2=Segunda, etc.).
+
+Exercício 7 - Calculadora Simples
+Receba dois números e uma operação (+, -, *, /). Use switch para calcular e mostrar o resultado.
+
+Exercício 8 - Categoria por Idade
+Classifique a idade: 0-12 "Criança", 13-17 "Adolescente", 18-59 "Adulto", 60+ "Idoso".
+
+Exercício 9 - Login Simples
+Verifique se um nome de usuário é "admin" e senha é "1234". Informe "Acesso concedido" ou "Acesso negado".
+
+Exercício 10 - Desconto por Compra
+Se o valor da compra for maior que R$ 100, aplique 10% de desconto. Mostre o valor final.
+
+Nível Intermediário (Combinações e Lógica)
+
+Exercício 11 - Ano Bissexto
+Verifique se um ano é bissexto. Regra: Divisível por 4, mas não por 100, exceto se for divisível por 400.
+
+Exercício 12 - Triângulo Válido
+Verifique se três lados podem formar um triângulo. Regra: cada lado deve ser menor que a soma dos outros dois.
+
+Exercício 13 - Cálculo de IMC e Categoria
+Calcule o IMC (peso/altura²) e classifique: Abaixo do peso (<18.5), Normal (18.5-24.9), Sobrepeso (25-29.9), Obesidade (>=30).
+
+Exercício 14 - Menu Interativo
+Crie um menu com 4 opções usando switch. Cada opção executa uma ação diferente (ex: saudação, cálculo, etc.).
+
+Exercício 15 - Nota por Conceito
+Converta uma nota numérica para conceito: A (9-10), B (7-8.9), C (5-6.9), D (3-4.9), F (0-2.9).
+
+Exercício 16 - Validador de Senha
+A senha deve ter: pelo menos 8 caracteres E conter pelo menos um número. Informe se é válida ou não.
+
+Exercício 17 - Plano de Saúde
+Baseado na idade: 0-18 anos = R$ 50, 19-40 = R$ 70, 41-60 = R$ 90, 61+ = R$ 100. Calcule o valor do plano.
+
+Exercício 18 - Operador Ternário Prático
+Use o operador ternário para: receber um número e imprimir "Positivo" ou "Não positivo" em uma linha.
+
+Exercício 19 - Controle de Estoque
+Se quantidade em estoque for menor que 10, mostrar "Baixo estoque". Se for entre 10 e 50, "Estoque normal". Acima de 50, "Estoque alto".
+
+Exercício 20 - Sistema de Transporte
+Distância da viagem: até 100km = carro, 101-500km = ônibus, mais que 500km = avião. Recomende o meio de transporte.
