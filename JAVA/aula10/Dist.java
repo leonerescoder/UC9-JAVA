@@ -11,7 +11,7 @@ public class Dist {
         dy= y2-y1;
 
 
-        distX =Math.pow(dx,2.0); //eleva um numero
+        distX =Math.pow(dx,2.0); 
         distY=Math.pow(dy,2.0);
         
         resultado =Math.sqrt((distX+ distY));
@@ -23,6 +23,7 @@ public class Dist {
     }
     public static void main(String[] args) {
         double x1,y1,x2,y2;
+        
         x1=0;
         y1=0;
         x2=0;
