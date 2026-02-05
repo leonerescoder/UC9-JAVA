@@ -5,7 +5,7 @@ public class Dist {
     //static void calculaDistancia(double x1,double x2)
 
 
-     static void caculaDistancia(double x1,double y1,double x2,double y2){
+      public static void caculaDistancia(double x1,double y1,double x2,double y2){
         double dx,dy,distX,distY,resultado;
         dx= x2-x1;
         dy= y2-y1;
@@ -22,10 +22,18 @@ public class Dist {
 
     }
     public static void main(String[] args) {
-       caculaDistancia(0, 0, 0, 1);
+        double x1,y1,x2,y2;
+        x1=0;
+        y1=0;
+        x2=0;
+        y2=1;
 
 
-       
+
+       caculaDistancia(x1, y1, x2, y2);
+
+
+
         /* 
         x1=0;
         y1=1;
