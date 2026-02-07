@@ -4,6 +4,10 @@ public class atividade11 {
 
     public static void imprimirLinha() {
         System.out.println("-");
+        System.out.println("-");
+        System.out.println("-");
+        System.out.println("-");
+        System.out.println("-");
 
     }
 
