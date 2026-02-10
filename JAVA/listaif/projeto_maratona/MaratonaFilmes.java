@@ -79,11 +79,12 @@ public class MaratonaFilmes {
         System.out.println( "Filmes planejados: "+ filmes);
         System.out.println( "Duração média por filme: " + duracaoMedia);
         duracaoTotal = calcularTempoTotal(filmes, duracaoMedia);
-        System.out.println("A classificção é "+ classificarMaratona(duracaoTotal));
         duracaoTotal = calcularTempoTotal(filmes, duracaoMedia);
         //classificarMaratona(duracaoTotal);
         //System.out.println("Retorno do Total "+ duracaoTotal); teste
         System.out.printf("Cálculos: \nTempo total: "+ duracaoTotal + " horas");
+        System.out.println();
+        System.out.println("A classifição é "+ classificarMaratona(duracaoTotal));
         
         
 
