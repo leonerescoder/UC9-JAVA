@@ -63,6 +63,7 @@ public class MaratonaFilmes {
         int calculo;
         double duracaoMedia;
         double duracaoTotal;
+        boolean trueornote;
 
 
 
@@ -84,7 +85,10 @@ public class MaratonaFilmes {
         //System.out.println("Retorno do Total "+ duracaoTotal); teste
         System.out.printf("Cálculos: \nTempo total: "+ duracaoTotal + " horas");
         System.out.println();
-        System.out.println("A classifição é "+ classificarMaratona(duracaoTotal));
+        System.out.println("Classificação: "+ classificarMaratona(duracaoTotal));
+        trueornote = isValida(filmes);
+        System.out.println("Validação: Planejamento válido? " + trueornote);
+
         
         
 
