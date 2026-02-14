@@ -1,5 +1,8 @@
 package listaif.projeto_maratona;
 
+import java.util.Scanner;
+
+
 public class MaratonaFilmes {
     public static void ExibirCabecalho (){
         System.out.printf("============================================= \n");
@@ -54,10 +57,12 @@ public class MaratonaFilmes {
 
     public static void main(String[] args) {
 
-        //
+        Scanner in = new Scanner(System.in);
+
+        
         String user;
 
-
+        
         int filmes;
         double horas;
         int calculo;
