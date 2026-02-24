@@ -26,7 +26,9 @@ public class AnaliseMeteorologica {
 
 
     public static void main(String[] args) {
-     System.out.println(calcularMediaPonderadaTemperatura(50, 60));
+        
+        
+    
 
 
        
