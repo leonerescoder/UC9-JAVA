@@ -15,12 +15,7 @@ public class AnaliseMeteorologica {
         
         
          calculo = (max * 0.7) + (min * 0.3);
-
-
-
-
-
-        return calculo;
+            return calculo;
         
     }    
 
@@ -36,6 +31,8 @@ public class AnaliseMeteorologica {
 
         }else if(tempMedia < 15 && umidadeMedia < 50){
             return("FRIO E SECO");
+        }else{
+            return("");
         }
 
 
@@ -46,7 +43,7 @@ public class AnaliseMeteorologica {
 
 
     public static void main(String[] args) {
-
+        
         
         
         double[][] temperaturas = {
@@ -56,19 +53,20 @@ public class AnaliseMeteorologica {
              {30.2, 20.5},  // Cidade 4
              {25.7, 15.3}   // Cidade 5
             };
-
-        
-        int[][] umidades = {
-            {85, 60, 75},  // Cidade 1
-            {78, 55, 70},  // Cidade 2
-            {90, 65, 80},  // Cidade 3
-            {82, 58, 72},  // Cidade 4
-            {75, 50, 68}   // Cidade 5
+            
+            
+            int[][] umidades = {
+                {85, 60, 75},  // Cidade 1
+                {78, 55, 70},  // Cidade 2
+                {90, 65, 80},  // Cidade 3
+                {82, 58, 72},  // Cidade 4
+                {75, 50, 68}   // Cidade 5
             };
-
-        
-        System.out.println();
-        
+            
+             // calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[1][1]);
+            
+            
+            System.out.println(calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[1][1]));
 
         
         
