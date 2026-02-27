@@ -41,7 +41,8 @@ public class AnaliseMeteorologica {
         
         double temperature ;
         int umidade;
-        Double qtd = new Double(umidade);
+       // Double qtdFilmes = new Double(umidade);
+        
         
         
         double[][] temperaturas = {
@@ -62,19 +63,19 @@ public class AnaliseMeteorologica {
         };
         
         temperature =calcularMediaPonderadaTemperatura(temperaturas[0][0],temperaturas[0][1]);
-        umidade = calcularMediaPonderadaTemperatura(umidades[0][0],umidades[0][1]);
 
-        System.out.println(calcularMediaPonderadaTemperatura(temperature, umidade));
+       // umidade = calcularMediaPonderadaTemperatura(umidades[0][0],umidades[0][1]); Teste da Função
+
+        //System.out.println(calcularMediaPonderadaTemperatura(temperature, umidade)); Teste da Função
+        //System.out.println(calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[0][1])); Teste da Função
+
         
     
+        //Inicio do Programa;
 
-
-
-    
-
-
-     // System.out.println(calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[0][1])); Teste da Função
-    
+        System.out.printf("==========================================================\n");
+        System.out.printf("\tSISTEMA  DE ANALISE  METEOROLÓGICA  INTELIGENTE \n" );
+        System.out.printf("==========================================================");
 
              
 
