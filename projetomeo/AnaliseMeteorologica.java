@@ -5,17 +5,8 @@ public class AnaliseMeteorologica {
     public static double calcularMediaPonderadaTemperatura(double max ,double min) {
 
         double calculo;
-        
-        if(min <= -50 && max >= 60){
-            System.out.println("Estão no intervalo razoável");
-            
-        }else{
-            
-        }
-        
-        
-         calculo = (max * 0.7) + (min * 0.3);
-            return calculo;
+        calculo = (max * 0.7) + (min * 0.3);
+        return calculo;
         
     }    
 
@@ -63,10 +54,13 @@ public class AnaliseMeteorologica {
                 {75, 50, 68}   // Cidade 5
             };
             
-             // calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[1][1]);
+             //System.out.println(calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[0][1]));
+
+
+             
+
             
-            
-            System.out.println(calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[1][1]));
+
 
         
         
