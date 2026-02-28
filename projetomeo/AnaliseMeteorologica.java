@@ -69,13 +69,22 @@ public class AnaliseMeteorologica {
         //System.out.println(calcularMediaPonderadaTemperatura(temperature, umidade)); Teste da Função
         //System.out.println(calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[0][1])); Teste da Função
 
-        
+
     
         //Inicio do Programa;
 
         System.out.printf("==========================================================\n");
         System.out.printf("\tSISTEMA  DE ANALISE  METEOROLÓGICA  INTELIGENTE \n" );
         System.out.printf("==========================================================");
+        System.out.println(" ");
+        
+        System.out.printf("\nANALISE DETALHADA POR CIDADE:\n" );
+        System.out.printf("--------------------------------------------------------------------------\n");
+        System.out.printf("CIDADE  | T.MAX | T.MIN | T.MÉD | UMID | CLASSIFICAÇÃO     | ALERTA   \n" );
+        System.out.printf("---------------------------------------------------------------------------\n");
+        System.out.printf("    1   | 32.5°C| 22.1°C|     | 73.3 | QUENTE MODERADO   | AMARELO\r\n");
+        
+
 
              
 
