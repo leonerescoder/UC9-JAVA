@@ -82,7 +82,9 @@ public class AnaliseMeteorologica {
         System.out.printf("--------------------------------------------------------------------------\n");
         System.out.printf("CIDADE  | T.MAX | T.MIN | T.MÉD | UMID | CLASSIFICAÇÃO     | ALERTA   \n" );
         System.out.printf("---------------------------------------------------------------------------\n");
-        System.out.printf("    1   | 32.5°C| 22.1°C|     | 73.3 | QUENTE MODERADO   | AMARELO\r\n");
+       // System.out.printf("    1   | 32.5°C| 22.1°C|temperature: %.2f °C | 73.3 | QUENTE MODERADO   | AMARELO\n" , temperature);
+        
+        
         
 
 
