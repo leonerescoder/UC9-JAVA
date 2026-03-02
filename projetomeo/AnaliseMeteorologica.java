@@ -8,9 +8,15 @@ public class AnaliseMeteorologica {
         calculo = (max * 0.7) + (min * 0.3);
         return calculo;
         
-    }    
+    } 
+    public static int calcularMediaUmidade(int umid1 ,int umid2,int umid3) {
+
+        int calc;
+        calc = (umid1 + umid2 + umid3) / 3 ;
+        return calc;   
 
 
+    };
 
     public static String classificaClima( double tempMedia,  int umidadeMedia){
 
@@ -25,7 +31,7 @@ public class AnaliseMeteorologica {
             return("FRIO E SECO");
 
         }else{
-            return("");
+            return("QUENTE MODERADO");
         }
     }
         
@@ -40,7 +46,8 @@ public class AnaliseMeteorologica {
     public static void main(String[] args) {
         
         double temperature ;
-        int umidade;
+        double umidade;
+        String classifica;
        // Double qtdFilmes = new Double(umidade);
         
         
@@ -63,26 +70,30 @@ public class AnaliseMeteorologica {
         };
         
         temperature =calcularMediaPonderadaTemperatura(temperaturas[0][0],temperaturas[0][1]);
+        umidade = calcularMediaUmidade(umidades[0][0],umidades[0][1],umidades[0][2]); 
 
-       // umidade = calcularMediaPonderadaTemperatura(umidades[0][0],umidades[0][1]); Teste da Função
+        classifica=classificaClima(temperature,(int)umidade);
+        
+        
 
-        //System.out.println(calcularMediaPonderadaTemperatura(temperature, umidade)); Teste da Função
+
+        //System.out.println(classificaClima(temperature,(int)umidade));/// Teste da Função
         //System.out.println(calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[0][1])); Teste da Função
 
 
     
         //Inicio do Programa;
 
-        System.out.printf("==========================================================\n");
+        System.out.printf("===========================================================================\n");
         System.out.printf("\tSISTEMA  DE ANALISE  METEOROLÓGICA  INTELIGENTE \n" );
-        System.out.printf("==========================================================");
+        System.out.printf("===========================================================================");
         System.out.println(" ");
         
         System.out.printf("\nANALISE DETALHADA POR CIDADE:\n" );
         System.out.printf("--------------------------------------------------------------------------\n");
-        System.out.printf("CIDADE  | T.MAX | T.MIN | T.MÉD | UMID | CLASSIFICAÇÃO     | ALERTA   \n" );
+        System.out.printf("CIDADE  | T.MAX  | T.MIN  | T.MÉD  | UMID   | CLASSIFICAÇÃO     | ALERTA   \n" );
         System.out.printf("---------------------------------------------------------------------------\n");
-        System.out.printf("    1   | 32.5°C| 22.1°C| %.2f °C| 73.3 | QUENTE MODERADO   | AMARELO\n" , temperature);
+        System.out.printf("    1   |%.2f °C|%.2f °C|%.2f °C|%.2f °C| %s  | AMARELO\n" ,temperaturas[0][0],temperaturas[0][1],temperature,umidade,classifica);
         
         
         
