@@ -45,9 +45,9 @@ public class AnaliseMeteorologica {
 
     public static void main(String[] args) {
         
-        double temperature ;
-        double umidade;
-        String classifica;
+        double temp1,temp2,temp3,temp4,temp5 ;
+        double umid1,umid2,umid3,umid4,umid5;
+        String classif1,classif2,classif3,classif4,classif5;
        // Double qtdFilmes = new Double(umidade);
         
         
@@ -69,12 +69,32 @@ public class AnaliseMeteorologica {
                 {75, 50, 68}   // Cidade 5
         };
         
-        temperature =calcularMediaPonderadaTemperatura(temperaturas[0][0],temperaturas[0][1]);
-        umidade = calcularMediaUmidade(umidades[0][0],umidades[0][1],umidades[0][2]); 
+        //CIDADE 1
+        temp1 =calcularMediaPonderadaTemperatura(temperaturas[0][0],temperaturas[0][1]);
+        umid1 = calcularMediaUmidade(umidades[0][0],umidades[0][1],umidades[0][2]); 
+        classif1=classificaClima(temp1,(int)umid1);
+        
+        //CIDADE 2
+        temp2 =calcularMediaPonderadaTemperatura(temperaturas[1][0],temperaturas[1][1]);
+        umid2 = calcularMediaUmidade(umidades[1][0],umidades[1][1],umidades[1][2]); 
+        classif2=classificaClima(temp1,(int)umid2);
 
-        classifica=classificaClima(temperature,(int)umidade);
+        //CIDADE 3
+        temp3 =calcularMediaPonderadaTemperatura(temperaturas[2][0],temperaturas[2][1]);
+        umid3 = calcularMediaUmidade(umidades[2][0],umidades[2][1],umidades[2][2]); 
+        classif3=classificaClima(temp3,(int)umid3);
+
+        //CIDADE 4
+        temp4 =calcularMediaPonderadaTemperatura(temperaturas[3][0],temperaturas[3][1]);
+        umid4 = calcularMediaUmidade(umidades[3][0],umidades[3][1],umidades[3][2]); 
+        classif4=classificaClima(temp4,(int)umid4);
+
+        //CIDADE 5
+        temp5 =calcularMediaPonderadaTemperatura(temperaturas[4][0],temperaturas[4][1]);
+        umid5 = calcularMediaUmidade(umidades[4][0],umidades[4][1],umidades[4][2]); 
+        classif5=classificaClima(temp5,(int)umid5);
         
-        
+
 
 
         //System.out.println(classificaClima(temperature,(int)umidade));/// Teste da Função
@@ -93,10 +113,12 @@ public class AnaliseMeteorologica {
         System.out.printf("--------------------------------------------------------------------------\n");
         System.out.printf("CIDADE  | T.MAX  | T.MIN  | T.MÉD  | UMID   | CLASSIFICAÇÃO     | ALERTA   \n" );
         System.out.printf("---------------------------------------------------------------------------\n");
-        System.out.printf("    1   |%.2f °C|%.2f °C|%.2f °C|%.2f °C| %s  | AMARELO\n" ,temperaturas[0][0],temperaturas[0][1],temperature,umidade,classifica);
-        
-        
-        
+        System.out.printf("    1   |%.2f °C|%.2f °C|%.2f °C|%.2f °C|%s     | AMARELO\n" ,temperaturas[0][0],temperaturas[0][1],temp1,umid1,classif1);
+        System.out.printf("    2   |%.2f °C|%.2f °C|%.2f °C|%.2f °C|%s         | AMARELO\n" ,temperaturas[1][0],temperaturas[1][1],temp2,umid2,classif2);
+        System.out.printf("    3   |%.2f °C|%.2f °C|%.2f °C|%.2f °C|%s| AMARELO\n" ,temperaturas[2][0],temperaturas[2][1],temp3,umid3,classif3);
+        System.out.printf("    4   |%.2f °C|%.2f °C|%.2f °C|%.2f °C|%s         | AMARELO\n" ,temperaturas[3][0],temperaturas[3][1],temp4,umid4,classif4);
+        System.out.printf("    5   |%.2f °C|%.2f °C|%.2f °C|%.2f °C|%s         | AMARELO\n" ,temperaturas[4][0],temperaturas[4][1],temp5,umid5,classif5);
+        System.out.printf("---------------------------------------------------------------------------\n");
 
 
              
