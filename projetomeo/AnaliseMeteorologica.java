@@ -33,7 +33,18 @@ public class AnaliseMeteorologica {
         }else{
             return("QUENTE MODERADO");
         }
+    };
+    public static String gerarAlertas(double temp,int umidade) {
+        
+        if(temp > 35 || umidade > 90 ){
+            return("Alerta VERMELHO");
+
+        //}else if(){
+
+        //}
+        
     }
+
         
 
 
