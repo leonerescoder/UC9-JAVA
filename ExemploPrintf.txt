@@ -3,3 +3,8 @@
         double altura = 1.68;
 
          System.out.printf("Nome: %s | Idade: %d | Altura: %.2f m%n", nome, idade, altura);
+
+
+         for(int y = 0; y < temperaturas[i].length; y++){
+               
+               System.out.print(temperaturas[i][y]+ " ");

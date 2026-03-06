@@ -47,18 +47,22 @@ public class AnaliseMeteorologica {
         }
         
     }
-    /* 
-    public static Double identificarCidadeComMaiorAmplitudeTermica() {
+    
+    public static void identificarCidadeComMaiorAmplitudeTermica(double[][] a) {
         
-     for(i =0;i <temperatura.length;i++){
-        
-        };
+           for(int i = 0; i< a.length; i++){
+             System.out.println(a[i][0]);
+             
+            };
+            System.out.println(" ");
+            
+            for(int y = 0; y < a.length ; y++){
+                System.out.println(a[y][1]);
 
-
+            };
 
     }
 
-*/
         
 
 
@@ -95,14 +99,7 @@ public class AnaliseMeteorologica {
                 {75, 50, 68}   // Cidade 5
         };
 
-
-         for(int i = 0; i < temperaturas.length;i++){
-           
-            System.out.print(temperaturas[i]+ " ");  
-        
-
-            
-          };
+        identificarCidadeComMaiorAmplitudeTermica(temperaturas);
 
 
 
@@ -165,9 +162,6 @@ public class AnaliseMeteorologica {
         System.out.printf("    5   |%.2f °C|%.2f °C|%.2f °C|%.2f °C|%s         | %s\n" ,temperaturas[4][0],temperaturas[4][1],temp5,umid5,classif5,alert5);
         System.out.printf("---------------------------------------------------------------------------\n");
         
-          for(int y = 0; y < temperaturas[i].length; y++){
-               
-               System.out.print(temperaturas[i][y]+ " ");
 
 
 
