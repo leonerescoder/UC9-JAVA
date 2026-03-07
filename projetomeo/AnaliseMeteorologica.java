@@ -49,19 +49,21 @@ public class AnaliseMeteorologica {
     }
     
     public static void identificarCidadeComMaiorAmplitudeTermica(double[][] a) {
-        
-           for(int i = 0; i< a.length; i++){
-             System.out.println(a[i][0]);
-             
-            };
-            System.out.println(" ");
+
+            double calculo;
             
-            for(int y = 0; y < a.length ; y++){
-                System.out.println(a[y][1]);
+        
+           for(int i = 0; i < a.length; i++){
+             calculo = a[i][0]- a[i][1];
+             System.out.println(calculo);
+                              
+           }
 
-            };
 
-    }
+
+        };
+        
+        /* */
 
         
 
@@ -163,6 +165,7 @@ public class AnaliseMeteorologica {
         System.out.printf("---------------------------------------------------------------------------\n");
         
 
+      
 
 
         */

@@ -7,4 +7,4 @@
 
          for(int y = 0; y < temperaturas[i].length; y++){
                
-               System.out.print(temperaturas[i][y]+ " ");
+               System.out.print(temperaturas[i][y]+ " ");}
