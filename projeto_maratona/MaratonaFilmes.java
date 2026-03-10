@@ -74,9 +74,12 @@ public class MaratonaFilmes {
 
         
         //Recebendo as valores na variavel
-        filmes=10;
-        duracaoMedia=2.0;
-        user="LEO";
+        System.out.println("Qual seria o nome do Usuario: ");
+        user=in.nextLine();
+        System.out.println("Quantos Filmes você quer assitir?: ");
+        filmes=in.nextInt();
+        System.out.println("Qual é duração média dos filmes?: ");
+        duracaoMedia=in.nextDouble();
 
         ExibirCabecalho();
         System.out.println( );
