@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MaratonaFilmes",
+            "request": "launch",
+            "mainClass": "projeto_maratona.MaratonaFilmes",
+            "projectName": "UC9-JAVA_a51cf6a0"
+        },
+        {
+            "type": "java",
+            "name": "AnaliseMeteorologica",
+            "request": "launch",
+            "mainClass": "projetomeo.AnaliseMeteorologica",
+            "projectName": "UC9-JAVA_a51cf6a0"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
