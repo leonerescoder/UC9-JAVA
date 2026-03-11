@@ -18,7 +18,8 @@ public class AnaliseMeteorologica {
 
     };
 
-    public static String classificaClima( double tempMedia,  int umidadeMedia){ //Classifica os médias da temperatura
+    //Classifica os médias da temperatura
+    public static String classificaClima( double tempMedia,  int umidadeMedia){ 
  
        
       
@@ -55,6 +56,7 @@ public class AnaliseMeteorologica {
         double amplitude =0;
         for(int i = 0; i < a.length; i++){
              calculo = a[i][0]- a[i][1];
+             System.out.println(calculo);
             
             
             if (calculo > amplitude) {
@@ -70,17 +72,19 @@ public class AnaliseMeteorologica {
             
             
     };
+    //Metodo que realiza a automatização.
     public static void saidaProcessamento(double a[][],int b [][]) {
+        //declaração de variaveis
         double temp,umid;
-        String classific, alert;
+        String classific, alert; 
         int indicador=0;
-
+        //Loop que realiza a automatização dos dados
         for(int i= 0; i < a.length;i++){
             temp =calcularMediaPonderadaTemperatura(a[i][0],a[i][1]);
             umid = calcularMediaUmidade(b[i][0],b[i][1],b[i][2]); 
             classific=classificaClima(temp,(int)umid);
             alert=gerarAlertas(temp,(int)umid);
-            indicador+=1;
+            indicador+=1; 
 
             System.out.printf("    %d   |%-5.2f °C|%-5.2f °C|%-5.2f °C|%-5.2f °C|%-20s|%-17s\n" ,indicador,a[i][0],a[i][1],temp,umid,classific,alert);
 
@@ -100,6 +104,7 @@ public class AnaliseMeteorologica {
         
          
     public static void main(String[] args) {
+        //Array de dados ;
         
        double[][] temperaturas = {
              {32.5, 22.1},  // Cidade 1
@@ -118,7 +123,9 @@ public class AnaliseMeteorologica {
                 {75, 50, 68}   // Cidade 5
         };
 
-        ///System.out.println( "a: " + identificarCidadeComMaiorAmplitudeTermica(temperaturas));
+
+
+       // System.out.println( "a: " + identificarCidadeComMaiorAmplitudeTermica(temperaturas)); Teste de Função
 
 
 
@@ -126,7 +133,7 @@ public class AnaliseMeteorologica {
         //System.out.println(calcularMediaPonderadaTemperatura(temperaturas[0][0], temperaturas[0][1])); Teste da Função
 
 
-    
+        //Saida do código;
         
         System.out.printf("===========================================================================\n");
         System.out.printf("\tSISTEMA  DE ANALISE  METEOROLÓGICA  INTELIGENTE \n" );
