@@ -20,7 +20,8 @@ public class AnaliseMeteorologica {
 
     //Classifica os médias da temperatura
     public static String classificaClima( double tempMedia,  int umidadeMedia){ 
- 
+       
+        
        
       
         if(tempMedia > 30 && umidadeMedia > 75){
@@ -57,7 +58,7 @@ public class AnaliseMeteorologica {
         
         double calculo;
         double amplitude =0;
-        int indicador=1;
+        //int indicador=1;
         for(int i = 0; i < a.length; i++){
              calculo = a[i][0]- a[i][1];
              //System.out.println(calculo); Teste de Função
@@ -65,7 +66,7 @@ public class AnaliseMeteorologica {
             
             if (calculo > amplitude) {
                 amplitude  = calculo;
-                indicador += 1;
+               // indicador += 1;
                 
             };
 
@@ -83,7 +84,7 @@ public class AnaliseMeteorologica {
     public static void saidaProcessamento(double a[][],int b [][]) {
         //declaração de variaveis
         double temp,umid;
-        String classific, alert; 
+        String classific; //alert; 
         int indicador=0;
         
         //Loop que realiza a automatização dos dados
@@ -157,7 +158,7 @@ public class AnaliseMeteorologica {
         System.out.printf("ESTATÍSTICAS GERAIS: \n" );
         double amplitude= identificarCidadeComMaiorAmplitudeTermica(temperaturas);
 
-        System.out.printf("Maior amplitude térmica:  (%.2f) \n",amplitude );
+        System.out.printf("Maior amplitude térmica:(%.2f) \n",amplitude );
 
         System.out.printf("---------------------------------------------------------------------------\n");
         
