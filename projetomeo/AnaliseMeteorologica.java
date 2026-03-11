@@ -35,36 +35,43 @@ public class AnaliseMeteorologica {
             return("QUENTE MODERADO");
         }
     };
-    public static String gerarAlertas(double temp,int umidade) { //Este metodo faz um relação entre a umidade e temperatura e faz e emite uma alerta
+    /*
+     public static String gerarAlertas(double temp,int umidade) { //Este metodo faz um relação entre a umidade e temperatura e faz e emite uma alerta
+    
+    if(temp > 35 || umidade > 90 ){
+        return("Alerta VERMELHO");
         
-        if(temp > 35 || umidade > 90 ){
-            return("Alerta VERMELHO");
-
-        }else if(temp > 30 && temp < 35 &&  umidade > 80  ){
+    }else if(temp > 30 && temp < 35 &&  umidade > 80  ){
             return("Alerta Amarelo");
 
         }else{
             return("Alerta Verde");
         }
-        
     }
+    */ 
+
     
-    
+
+    //Metodo que clasiisfica a amplitudes das cidades
     public static double identificarCidadeComMaiorAmplitudeTermica(double[][] a) {
         
         double calculo;
         double amplitude =0;
+        int indicador=1;
         for(int i = 0; i < a.length; i++){
              calculo = a[i][0]- a[i][1];
-             System.out.println(calculo);
+             //System.out.println(calculo); Teste de Função
             
             
             if (calculo > amplitude) {
                 amplitude  = calculo;
+                indicador += 1;
+                
             };
 
            }
-            return Math.round(amplitude * 10.0) /10.0;
+            return Math.round(amplitude * 10.0) /10.0; //arrendonda para casa decimal
+            
          
             
                
@@ -78,15 +85,17 @@ public class AnaliseMeteorologica {
         double temp,umid;
         String classific, alert; 
         int indicador=0;
+        
         //Loop que realiza a automatização dos dados
         for(int i= 0; i < a.length;i++){
             temp =calcularMediaPonderadaTemperatura(a[i][0],a[i][1]);
             umid = calcularMediaUmidade(b[i][0],b[i][1],b[i][2]); 
             classific=classificaClima(temp,(int)umid);
-            alert=gerarAlertas(temp,(int)umid);
+            //alert=gerarAlertas(temp,(int)umid);
             indicador+=1; 
 
-            System.out.printf("    %d   |%-5.2f °C|%-5.2f °C|%-5.2f °C|%-5.2f °C|%-20s|%-17s\n" ,indicador,a[i][0],a[i][1],temp,umid,classific,alert);
+            System.out.printf("    %d   |%-5.2f °C|%-5.2f °C|%-5.2f °C|%-5.2f °C|%-20s|\n" ,indicador,a[i][0],a[i][1],temp,umid,classific);//%-17s| alert); // Linha de Formatação em printf aonde
+
 
 
 
@@ -125,7 +134,7 @@ public class AnaliseMeteorologica {
 
 
 
-       // System.out.println( "a: " + identificarCidadeComMaiorAmplitudeTermica(temperaturas)); Teste de Função
+       //System.out.println( "a: " + identificarCidadeComMaiorAmplitudeTermica(temperaturas)); //Teste de Função
 
 
 
@@ -142,9 +151,14 @@ public class AnaliseMeteorologica {
         
         System.out.printf("\nANALISE DETALHADA POR CIDADE:\n" );
         System.out.printf("--------------------------------------------------------------------------\n");
-        System.out.printf("CIDADE  | T.MAX  | T.MIN  | T.MÉD  | UMID   | CLASSIFICAÇÃO      | ALERTA   \n" );
+        System.out.printf("CIDADE  | T.MAX  | T.MIN  | T.MÉD  | UMID   | CLASSIFICAÇÃO         \n" );
         System.out.printf("---------------------------------------------------------------------------\n");
         saidaProcessamento(temperaturas, umidades);
+        System.out.printf("ESTATÍSTICAS GERAIS: \n" );
+        double amplitude= identificarCidadeComMaiorAmplitudeTermica(temperaturas);
+
+        System.out.printf("Maior amplitude térmica:  (%.2f) \n",amplitude );
+
         System.out.printf("---------------------------------------------------------------------------\n");
         
 
