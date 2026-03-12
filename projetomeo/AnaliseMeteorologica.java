@@ -83,7 +83,8 @@ public class AnaliseMeteorologica {
     //Metodo que realiza a automatização.
     public static void saidaProcessamento(double a[][],int b [][]) {
         //declaração de variaveis
-        double temp,umid;
+        double temp;
+        int umid;
         String classific; //alert; 
         int indicador=0;
         
@@ -91,11 +92,11 @@ public class AnaliseMeteorologica {
         for(int i= 0; i < a.length;i++){
             temp =calcularMediaPonderadaTemperatura(a[i][0],a[i][1]);
             umid = calcularMediaUmidade(b[i][0],b[i][1],b[i][2]); 
-            classific=classificaClima(temp,(int)umid);
-            //alert=gerarAlertas(temp,(int)umid);
+            classific=classificaClima(temp,umid);
+            //alert=gerarAlertas(temp,umid);
             indicador+=1; 
 
-            System.out.printf("    %d   |%-5.2f °C|%-5.2f °C|%-5.2f °C|%-5.2f °C|%-20s|\n" ,indicador,a[i][0],a[i][1],temp,umid,classific);//%-17s| alert); // Linha de Formatação em printf aonde
+            System.out.printf("    %d   |%-5.2f °C|%-5.2f °C|%-5.2f °C|%-2d°C|%-20s|\n" ,indicador,a[i][0],a[i][1],temp,umid,classific);//%-17s| alert); // Linha de Formatação em printf aonde
 
 
 
