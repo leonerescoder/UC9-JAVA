@@ -71,7 +71,7 @@ public class AnaliseMeteorologica {
             };
 
            }
-            return Math.round(amplitude * 10.0) /10.0; //arrendonda para casa decimal
+            return amplitude;  //arrendonda para casa decimal
             
          
             
