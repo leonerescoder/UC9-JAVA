@@ -1,0 +1,20 @@
+===COMMITS===
+1-Feat: cria estrutura inicial da classe MiniBanco
+
+2-Feat: adiciona leitura de nome e variáveis da conta
+
+3-Feat: extrai exibição do menu para método void
+
+4-Feat: implementa loop principal e roteamento de opções.
+
+5-Feat: implementa deposito com método de retorno double
+
+6-Feat: adiciona validação de valor
+com método boolean
+
+7-Feat: implementa saque com validações encadeadas e taxa
+
+8-Feat: implementa a consulta de 
+saldo reaproveitando um método
+
+9-Feat :adiciona extrato da sessão com array de String
