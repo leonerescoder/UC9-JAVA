@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AnaliseMeteorologica",
+            "request": "launch",
+            "mainClass": "projetomeo.AnaliseMeteorologica",
+            "projectName": "UC9-JAVA_95df4714"
+        },
+        {
+            "type": "java",
             "name": "MaratonaFilmes",
             "request": "launch",
             "mainClass": "projeto_maratona.MaratonaFilmes",
